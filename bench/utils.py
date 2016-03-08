@@ -69,7 +69,7 @@ def init(path, apps_path=None, no_procfile=False, no_backups=False,
 
 	if not frappe_path:
 		frappe_path = 'https://github.com/gangadhar-kadam/verve_test_frappe.git'
-	get_app('frappe', frappe_path, branch=frappe_branch, bench=path, build_asset_files=False, verbose=verbose)
+	get_app('frappe', frappe_path, branch=frappe_branch, bench=path, build_asset_files=False)
 	if not no_procfile:
 		setup_procfile(bench=path)
 	if not no_backups:
